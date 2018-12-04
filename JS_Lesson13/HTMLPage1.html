@@ -1,0 +1,55 @@
+﻿<!--Практика
+1. Сделать блок, шириной 200 на 200 пикселей, с фоновой заливкой.
+    Сделать две кнопки - для отображения и скрытия блока.
+    Сделать копку, по нажатию на которую блок отобразить и сразу
+    после скрывается (анимация скрытия и отображения медленная 1-3 секунды)
+    По умолчанию при загрузке старницы скрыть блок.
+    Сделать еще одну кнопку, по нажатию на которую весь блок становится прозрачным на случайную величину.
+
+    Сделать поле ввода и кнопку, в поле ввода вводится число, по нажатию на кнопку, блок становится на введенное
+    число шире.
+    И если блок скрыт, он показывается с анимацией (любой).
+
+    Сделать кнопку, по нажатию на которую на всех созданных кнопках меняется размер текста до 22px с анимацией.-->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #block{
+            height: 200px;
+            width: 200px;
+            background-color:orangered;
+        }
+        #block2 {
+            height: 200px;
+            width: 200px;
+            margin-top:300px;
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <button id="showhide">ShowHide</button>
+    <button id="show">Show</button>
+    <button id="hide">Hide</button>
+    <button id="fadeit">Fade</button>
+    <input id="input" />
+    <button id="inputbtn">Input button</button>
+    <button id="sizechange">Size change</button>
+    <button id="movebtn">Move</button>
+
+    <div id="block">
+
+    </div>
+
+    <div id="block2">
+
+    </div>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="JavaScript1.js"></script>
+</body>
+</html>
